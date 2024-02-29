@@ -38,7 +38,6 @@ class ResultFragment : Fragment() {
         }
 
         binding.btnBackMainScreen.setOnClickListener {
-
             val score = ResultFragmentArgs.fromBundle(requireArguments()).score
             val action = ResultFragmentDirections.actionMainFragment1(score)
             Navigation.findNavController(it).navigate(action)
